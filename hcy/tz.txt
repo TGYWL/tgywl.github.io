@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="#ml#/structure/css/layoutit.css" rel="stylesheet">
+	<script type="text/javascript" src="#ml#/structure/js/jquery-2.0.0.min.js"></script>
+	<script type="text/javascript" src="#ml#/structure/js/jquery-ui.js"></script>
+	<script type="text/javascript" src="#ml#/structure/js/jquery.ui.touch-punch.min.js"></script>
+	<script type="text/javascript" src="#ml#/structure/js/jquery.htmlClean.js"></script>
+	<script type="text/javascript" src="#ml#/structure/js/ckeditor.js"></script>
+	<script type="text/javascript" src="#ml#/structure/js/scripts.js"></script>
+<!--#head#-->
+<!--#css#-->
+</head>
+
+<body class="edit">
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="demo column" style="min-height: 757px;">
+
+ <!--#demo#-->
+
+    </div>
+    <!--/span-->
+    <div id="download-layout">
+      <div class="layui-container"></div>
+    </div>
+  </div>
+</div>
+<div class="modal hide fade" role="dialog" id="editorModal">
+  <div class="modal-body">
+    <p>
+      <textarea id="contenteditor" style="visibility: hidden; display: none;"></textarea>
+    </p>
+  </div>
+</div>
+<!--#js#-->
+</body>
+</html>
