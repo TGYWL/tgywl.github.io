@@ -180,19 +180,20 @@ body { margin: 0; padding: 0; position: relative; background-image: url(skin/ima
 	}
 </script>
 <script type="text/javascript"> 
-var t = 5; 
-function countDown(){ 
-var time = document.getElementById("time"); 
-t = t--; 
-time.value=t; 
-if (t<=0) { 
-location.href="https://tgywl.cn/hcy/index.html"; 
-clearInterval(inter); 
-}; 
+function countDown(secs,surl){ 
+ //alert(surl); 
+ var jumpTo = document.getElementById('jumpTo');
+ jumpTo.innerHTML=secs; 
+ if(--secs>0){ 
+  setTimeout("countDown("+secs+",'"+surl+"')",1000); 
+ }
+ else
+ {  
+  location.href=surl; 
+ } 
 } 
-var inter = setInterval("countDown()",1000); 
-//window.onload=countDown; 
-</script> 
+	countDown(5,'https://tgywl.cn/hcy/index.html');
+</script>
 	
 </body>
 </html>
