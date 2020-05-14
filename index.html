@@ -18,7 +18,7 @@ body { margin: 0; padding: 0; position: relative; background-image: url(skin/ima
 </style>
 
 </head>
-<body id="body" onLoad="init()" onload="setInterval(‘time()‘,1000)">
+<body id="body" onLoad="init()" >
     
 <script type="text/javascript" src="skin/js/threecanvas.js"></script>
 <script type="text/javascript" src="skin/js/snow.js"></script>
@@ -179,16 +179,5 @@ body { margin: 0; padding: 0; position: relative; background-image: url(skin/ima
 		renderer.render( scene, camera );
 	}
 </script>
-<script>
-function time(){
-    var time=document.getElementById("second").innerHTML;
-    if(time>0){
-        document.getElementById("second").innerHTML=time-1
-        }else{
-            location.href="https://tgywl.cn/hcy/index.html";
-            }
-    }
-	</script>
-	
 </body>
 </html>
